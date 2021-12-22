@@ -25,7 +25,7 @@ public class SearchTest {
                 .searchTvSeries(searchQuery)
                 .checkTvSeries(searchQuery);
     }
-
+    //2
     @CsvSource(value = {
             "Ведьмак",
             "Декстер"
