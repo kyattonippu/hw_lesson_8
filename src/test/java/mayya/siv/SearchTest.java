@@ -41,7 +41,7 @@ public class SearchTest {
                 .searchTvSeries(searchQuery)
                 .checkTvSeries(searchQuery);
     }
-
+    //3
     @EnumSource(SeriesNames.class)
     @Tag("3")
     @Severity(SeverityLevel.CRITICAL)
