@@ -5,7 +5,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
-
 import java.util.stream.Stream;
 
 @Owner("kyattonippu")
@@ -14,7 +13,7 @@ import java.util.stream.Stream;
 public class SearchTest {
 
     private final SearchTestSteps steps = new SearchTestSteps();
-
+    //1
     @ValueSource(strings = {"Ведьмак", "Декстер"})
     @Tag("1")
     @Severity(SeverityLevel.CRITICAL)
@@ -26,7 +25,7 @@ public class SearchTest {
                 .searchTvSeries(searchQuery)
                 .checkTvSeries(searchQuery);
     }
-
+    //2
     @CsvSource(value = {
             "Ведьмак",
             "Декстер"
@@ -42,7 +41,7 @@ public class SearchTest {
                 .searchTvSeries(searchQuery)
                 .checkTvSeries(searchQuery);
     }
-
+    //3
     @EnumSource(SeriesNames.class)
     @Tag("3")
     @Severity(SeverityLevel.CRITICAL)
